@@ -1,8 +1,8 @@
 interface WelcomeProps {
-  name: string;
+  name?: string;
 }
 
-const Welcome: React.FC<WelcomeProps> = ({ name }) => (
+const Welcome = ({ name = "Guest" }: WelcomeProps) => (
   <section>
     <h2>Welcome, {name}</h2>
   </section>
