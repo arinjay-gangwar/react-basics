@@ -1,0 +1,12 @@
+.user-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.premium {
+  color: green;
+}
+.standard {
+  color: gray;
+}
