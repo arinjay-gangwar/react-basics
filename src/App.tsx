@@ -1,4 +1,5 @@
 import Welcome from "./components/Welcome";
+import UserCard from "./components/UserCard/UserCard";
 import "./App.css";
 
 const App = () => {
@@ -12,6 +13,16 @@ const App = () => {
       <Welcome name="Jacob" />
       {/* Renders Default value of Prop */}
       {/* <Welcome /> */}
+      {/* UserCard */}
+      <UserCard
+        name="Alice"
+        age={28}
+        isPremium={true}
+      />
+      <UserCard
+        name="Bob"
+        age={35}
+      />
     </>
   );
 };
