@@ -1,8 +1,13 @@
 import Welcome from "./components/Welcome";
 import UserCard from "./components/UserCard/UserCard";
+import Counter from "./components/Counter/Counter";
 import "./App.css";
 
 const App = () => {
+  const handleCounterChange = (value: number) => {
+    console.log("Counter Updated", value);
+  };
+
   return (
     <>
       <header>
@@ -22,6 +27,15 @@ const App = () => {
       <UserCard
         name="Bob"
         age={35}
+      />
+      <Counter
+        initialValue={0}
+        onChange={handleCounterChange}
+      />
+      <Counter
+        initialValue={10}
+        onChange={handleCounterChange}
+        step={10}
       />
     </>
   );
