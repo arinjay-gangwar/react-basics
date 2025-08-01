@@ -1,6 +1,7 @@
 import Welcome from "./components/Welcome";
 import UserCard from "./components/UserCard/UserCard";
 import Counter from "./components/Counter/Counter";
+import LoginForm from "./components/LoginForm/LoginForm";
 import "./App.css";
 
 const App = () => {
@@ -37,6 +38,8 @@ const App = () => {
         onChange={handleCounterChange}
         step={10}
       />
+      {/* LoginForm Component */}
+      <LoginForm />
     </>
   );
 };
